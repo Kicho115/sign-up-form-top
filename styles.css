@@ -50,12 +50,23 @@ body {
     justify-content: space-around;
     background-color: rgb(246, 250, 254);
     width: 100vw;
-    padding: 50px;
+}
+
+.sign-up-motivation,
+.right-side-bottom {
+    padding-left: 60px;
 }
 
 .form-container {
     background-color: #ffffff;
-    padding: 20px 50px;
+    padding: 20px 60px;
+    box-shadow: 5px 10px 8px #dad9d9;
+}
+
+.form-container h4 {
+    font-size: 3vh;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .form-container form {
@@ -67,13 +78,35 @@ body {
 .form-left-side {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-label {
+.form-container label {
     display: flex;
     flex-direction: column;
     gap: 5px;
     margin: 10px 0px;
+    font-size: 1.5vh;
+    letter-spacing: 0.1vh;
+    color: #6d6d6c;
+}
+
+.form-container input {
+    border: 2px solid#E5E7EB;
+    padding: 5px 2px;
+    font-size: 1.7vh;
+}
+
+.form-container input:focus {
+    outline: 2px solid blue;
+}
+
+.form-container input:user-invalid {
+    border-color: red;
+}
+
+.form-container input:valid {
+    border-color: greenyellow;
 }
 
 .submit-btn {
@@ -86,4 +119,10 @@ label {
     font-size: 1.7vh;
     font-weight: 700;
     cursor: pointer;
+}
+
+.right-side a {
+    color: #596D48;
+    font-weight: 700;
+    text-decoration: none;
 }
