@@ -105,6 +105,14 @@ body {
     border-color: red;
 }
 
+.form-container label:has(input:user-invalid)::after {
+    content: " (" attr(data-help) ")";
+    color: transparent;
+    color: red;
+    font-size: 1.4vh;
+    margin-left: 4px;
+}
+
 .form-container input:valid {
     border-color: greenyellow;
 }
