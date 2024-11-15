@@ -109,6 +109,10 @@ body {
     border-color: greenyellow;
 }
 
+.form-container input::placeholder{
+    color: #a7a7a7;
+}
+
 .submit-btn {
     background-color: #596D48;
     color: antiquewhite;
